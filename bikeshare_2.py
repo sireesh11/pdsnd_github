@@ -19,21 +19,21 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
     while True:
-        cities = ['chicago', 'new york city', 'washington']
+        Cities = ['chicago', 'new york city', 'washington']
         city=input("Enter the city you want to search in (chicago, new york city, washington):")
-        if city not in cities :
-            print('Please enter valid city name')
+        if city not in Cities :
+            print('Please enter valid city name:')
             continue
         else:
             break
    # TO DO: get user input for month (all, january, february, ... , june)
 
     while True:
-        months = ['january', 'february', 'march', 'april', 'may', 'june']
+        Months = ['january', 'february', 'march', 'april', 'may', 'june']
         month=input("Enter the month you want to search (all,january,february,march,april,may,june):")
         if month !='all':
-            if month not in months:
-                print('Please enter valid month')
+            if month not in Months:
+                print('Please enter valid month:')
                 continue
             else:
                 break
@@ -41,11 +41,11 @@ def get_filters():
         break
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
-        days = ['sunday', 'monday', 'tuesday', 'wednesday','thursday', 'friday', 'saturday' ]
+        Days = ['sunday', 'monday', 'tuesday', 'wednesday','thursday', 'friday', 'saturday' ]
         day=input("Enter the day you want to search (all,monday,tuesday,wednesday,thursday,friday,saturday,sunday):")
         if day !='all':
-            if day not in days:
-                print('Please enter valid day')
+            if day not in Days:
+                print('Please enter valid day:')
                 continue
             else:
                 break
@@ -117,18 +117,18 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
-    print('The most commonly used Start station is:')
+    print('The most famous Start station is:')
     common_start=df['Start Station'].mode()[0]
     print(common_start)
 
 
     # TO DO: display most commonly used end station
-    print('The most commonly used End station is:')
+    print('The most famous End station is:')
     common_end=df['End Station'].mode()[0]
     print(common_end)
 
     # TO DO: display most frequent combination of start station and end station trip
-    print('The most common Start and End station is:')
+    print('The most famous Start and End station is:')
     df['Start End'] = df['Start Station'].map(str) + ' AND ' + df['End Station']
     popular_start_end = df['Start End'].value_counts().idxmax()
     print(popular_start_end)
