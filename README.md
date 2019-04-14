@@ -1,15 +1,14 @@
 ### Date created
-Include the date you created this project and README file.
+14-4-2019
 
 ### Project Title
-Replace the Project Title
+bike-share.py (github)
 
 ### Description
-Describe what your project is about and what it does
+The python program is an interactive environment for US Bikeshare where the user chooses data and filters to analyze the dataset.
 
 ### Files used
-Include the files used
+chicago.csv,new_york_city.csv,washinton.csv
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+### Credit
+NONE
