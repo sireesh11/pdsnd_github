@@ -1,5 +1,5 @@
 ### Date created
-14-4-2019
+14th April 2019 
 
 ### Project Title
 bike-share.py (github)
@@ -11,4 +11,4 @@ The python program is an interactive environment for US Bikeshare where the user
 chicago.csv,new_york_city.csv,washinton.csv
 
 ### Credit
-NONE
+NONE 
