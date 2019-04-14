@@ -19,21 +19,21 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
     while True:
-        cities = ['chicago', 'new york city', 'washington']
+        Cities = ['chicago', 'new york city', 'washington']
         city=input("Enter the city you want to search in (chicago, new york city, washington):")
-        if city not in cities :
-            print('Please enter valid city name')
+        if city not in Cities :
+            print('Please enter valid city name:')
             continue
         else:
             break
    # TO DO: get user input for month (all, january, february, ... , june)
 
     while True:
-        months = ['january', 'february', 'march', 'april', 'may', 'june']
+        Months = ['january', 'february', 'march', 'april', 'may', 'june']
         month=input("Enter the month you want to search (all,january,february,march,april,may,june):")
         if month !='all':
-            if month not in months:
-                print('Please enter valid month')
+            if month not in Months:
+                print('Please enter valid month:')
                 continue
             else:
                 break
@@ -45,7 +45,7 @@ def get_filters():
         day=input("Enter the day you want to search (all,monday,tuesday,wednesday,thursday,friday,saturday,sunday):")
         if day !='all':
             if day not in days:
-                print('Please enter valid day')
+                print('Please enter valid day:')
                 continue
             else:
                 break
